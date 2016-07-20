@@ -1,7 +1,7 @@
 {
   "name": "Emily Chen",
   "description": "A simple personal site",
-  "repository": "https://github.com/heroku/node-js-getting-started",
+  "repository": "https://github.com/emily404/emily404site",
   "logo": "https://plus.google.com/u/0/photos/105249288451502099137/albums/profile/6129276488231308194",
   "keywords": ["node", "express", "static"],
   "image": "heroku/nodejs"

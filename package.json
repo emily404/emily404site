@@ -1,12 +1,21 @@
 {
-  "name": "personalsite",
+  "name": "emily404site",
   "version": "1.0.0",
   "description": "",
+  "repository": "https://github.com/emily404/emily404site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=0.12.x"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "socket.io": "^1.4.5"
+  }
 }
