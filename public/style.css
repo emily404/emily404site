@@ -5,8 +5,8 @@
 }
 
 .logo {
-	width: 120px;
-	height: 120px;
+	width: 10em;
+	height: 10em;
 	border-radius: 50%;
 	margin: 4em;
 	margin-left: 0;
@@ -16,16 +16,24 @@ h1 {
 	font-family: 'Lobster Two', cursive;
 	font-size: 6em;
 	color: rgb(66, 66, 66);
+	overflow:hidden;
+	white-space: nowrap;
+	line-height: 2em;
+  	vertical-align: middle;
 }
 
 .subtitleBox {
 	display: flex;
-	justify-content: space-between;
-	margin-left: 10em;
-	margin-right: 10em;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	color: rgb(66, 66, 66);
+}
+
+.subtitleBox div {
+	margin: auto;
 }
 
 a{
@@ -50,12 +58,12 @@ a:hover{
 }
 @media only screen and (min-width: 20em) and (max-width: 40em) { 
 	html{
-		font-size: 10pt;
+		font-size: 7pt;
 	}
 }
 
 @media only screen and (max-width: 20em) { 
 	html{
-		font-size: 9pt;
+		font-size: 4pt;
 	}
 }
