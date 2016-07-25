@@ -1,34 +1,40 @@
-.titleBox {
-	display: flex;
-	justify-content: center;
-    margin-top: 6em;
+
+.frontPage {
+	padding: 20vh 15vh;
+	height: 100vh;
+	box-sizing: border-box;
 }
 
-.logo {
+.titleBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin: 3em;
+}
+
+#logo {
 	width: 10em;
 	height: 10em;
 	border-radius: 50%;
-	margin: 4em;
-	margin-left: 0;
+	margin: auto;
 }
 
-h1 {
+#pageName {
 	font-family: 'Lobster Two', cursive;
 	font-size: 6em;
 	color: rgb(66, 66, 66);
-	overflow:hidden;
-	white-space: nowrap;
 	line-height: 2em;
   	vertical-align: middle;
+  	margin: auto;
 }
 
 .subtitleBox {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin: auto;
 	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	color: rgb(66, 66, 66);
 }
 
@@ -46,24 +52,53 @@ a:link{
 	color: inherit;
 }
 
+#bio {
+  background-color: #0B222A;
+  background-image: url("lightbulb.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 70%;
+  max-height: 35vh;
+  padding: 10%;
+  font-family: Raleway;
+  color: white;
+}
+
+#bio h1 {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.centeredText {
+  text-align: center;
+}
+
 a:hover{
 	border-bottom: 1px dashed;
 	color: teal;
 }
 
-@media only screen and (min-width: 40em) { 
+@media only screen and (min-width: 768px) and (max-width: 1023px) { 
+	html{
+		font-size: 16pt;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
 	html{
 		font-size: 12pt;
 	}
-}
-@media only screen and (min-width: 20em) and (max-width: 40em) { 
-	html{
-		font-size: 7pt;
+	.frontPage {
+		padding: 20vh 10vh;
 	}
 }
 
-@media only screen and (max-width: 20em) { 
+@media only screen and (max-width: 479px) { 
 	html{
-		font-size: 4pt;
+		font-size: 7pt;
+	}
+	.frontPage {
+		padding: 20vh 1vh;
 	}
 }
+
