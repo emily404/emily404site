@@ -42,19 +42,14 @@
 	margin: auto;
 }
 
-a{
-	color: inherit;
-	padding: 0.25em 0;
-}
-
-a:link{
-	text-decoration: none;
-	color: inherit;
+.subtitleBox img {
+	height: 2em;
+	width: 2em;
 }
 
 #bio {
   background-color: #0B222A;
-  background-image: url("lightbulb.jpg");
+  background-image: url("image/lightbulb.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -74,9 +69,18 @@ a:link{
   text-align: center;
 }
 
+a{
+	color: inherit;
+	padding: 0.25em 0;
+}
+
+a:link{
+	text-decoration: none;
+	color: inherit;
+}
+
 a:hover{
 	border-bottom: 1px dashed;
-	color: teal;
 }
 
 @media only screen and (min-width: 1024px) { 
