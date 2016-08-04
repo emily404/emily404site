@@ -7,7 +7,7 @@
 .centerBox {
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -15,7 +15,9 @@
 .titleBox {
 	display: flex;
 	justify-content: center;
-    margin: 3em 0em;
+	/*margin: 3em 0em;*/
+    /*margin: 0;*/
+    margin-bottom: 3em;
 }
 
 #logo {
@@ -37,7 +39,7 @@
 .subtitleBox {
 	display: flex;
 	justify-content: space-between;
-	margin: auto 2em;
+	margin: 0 2em 2em 2em;
 	font-family: 'Raleway', sans-serif;
 	color: rgb(66, 66, 66);
 }
