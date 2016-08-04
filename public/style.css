@@ -103,7 +103,10 @@ a:hover{
 
 @media only screen and (min-width: 1px) { 
 	html{
-		font-size: 0.4em;
+		font-size: 0.75em;
+	}
+	#pageName {
+		font-size: 3.5em;
 	}
 	.centerBox {
 	    width: 80%;
@@ -112,7 +115,10 @@ a:hover{
 
 @media only screen and (min-width: 481px) { 
 	html{
-		font-size: 0.6em;
+		font-size: 0.9em;
+	}
+	#pageName {
+		font-size: 5em;
 	}
 	.centerBox {
 	    width: 50%;
@@ -121,7 +127,10 @@ a:hover{
 
 @media only screen and (min-width: 769px) { 
 	html{
-		font-size: 0.8em;
+		font-size: 1em;
+	}
+	#pageName {
+		font-size: 6em;
 	}
 	.centerBox {
 	    width: 40%;
@@ -130,7 +139,7 @@ a:hover{
 
 @media only screen and (min-width: 1024px) { 
 	html{
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 }
 
