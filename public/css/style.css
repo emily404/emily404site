@@ -65,13 +65,12 @@ a:hover{
     background-image: url("../image/snow.JPG");
     background-repeat: no-repeat;
     background-position: top;
-    background-attachment: fixed;
-    background-size: cover;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
-    max-height: 100vh;
     position: relative;
 }
 
@@ -112,7 +111,7 @@ a:hover{
 #character {
 }
 
-@media only screen and (min-width: 1px) and (max-width: 480px) { 
+@media only screen and (min-width: 1px) { 
     html{
         font-size: 0.8em;
     }
@@ -155,10 +154,13 @@ a:hover{
     #frontPage .centerBox {
         width: 40%;
     }
-
     .tiles-wrap {
       margin: 5vh 30vh;
     }
+    #bio {
+        background-attachment: fixed;
+    }
+
 }
 
 
