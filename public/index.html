@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,12 +8,13 @@
 		<link rel='shortcut icon' type='image/x-icon' href='image/favicon.ico' />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
 		<link href='https://fonts.googleapis.com/css?family=Raleway|Lobster+Two' rel='stylesheet' type='text/css'>
-		<script src="js/parallax.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/wookmark.css" />
 		<script src="js/wookmark.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/modals.css" />		
 		<link rel="stylesheet" type="text/css" href="css/close.css" />		
+		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/modal.js"></script>
+		<script src="js/projectTiles.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />	
 	</head>
 	<body>
@@ -36,7 +36,7 @@
 			</div>
 		</section>
 
-		<section id="bio" class="parallax-window" data-parallax="scroll" data-image-src="image/snow.JPG">
+		<section id="bio">
 			<article class="centerBox">
 				<h1 class="centerText">A LITTLE ABOUT MYSELF</h1>
 				<hr>
@@ -99,13 +99,5 @@
 			<p class="centerText">Software Developer X Social Introvert X Animal Lover X Music Aspirant</p>
 		</section>
 		
-		<script>
-			var wookmark = new Wookmark('#projectList', {
-				flexibleWidth: true,
-				offset: 40,
-				itemWidth: 200
-			});
-		</script>
-
 	</body>
 </html>

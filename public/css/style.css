@@ -10,12 +10,6 @@ a:hover{
     border-bottom: 1px dashed;
 }
 
-.parallax-window {
-    min-height: 100vh;
-    background: transparent;
-    position: relative;
-}
-
 .centerBox {
     margin: 0;
     position: absolute;
@@ -69,6 +63,16 @@ a:hover{
 }
 
 #bio {
+    background-image: url("../image/snow.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#bio article {
     color: white;
     background-color: rgba(128, 128, 128, 0.3);
     padding: 1% 5%;
