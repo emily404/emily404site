@@ -10,9 +10,8 @@
 
 			var wookmark = new Wookmark('#projectList', options);
 
-			$(window).load(function() {
-	   			handler.wookmark(options);
-			});
+			wookmark.layout(true);
+
 		})
 		.done( function( instance ) {
 			console.log('all project list images successfully loaded');
