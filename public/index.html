@@ -5,8 +5,16 @@
 		<meta charset=utf-8 />
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>Emily Chen</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>	
 		<link href='https://fonts.googleapis.com/css?family=Raleway|Lobster+Two' rel='stylesheet' type='text/css'>
+		<script src="js/parallax.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/wookmark.css" />
+		<script src="js/wookmark.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/modals.css" />		
+		<link rel="stylesheet" type="text/css" href="css/close.css" />		
+		<script src="js/modal.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />	
 	</head>
 	<body>
 		
@@ -27,22 +35,76 @@
 			</div>
 		</section>
 
-		<section id="bio">
+		<section id="bio" class="parallax-window" data-parallax="scroll" data-image-src="image/snow.jpg">
 			<article class="centerBox">
-				<h1 class="centeredText">A LITTLE ABOUT MYSELF</h1>
-				<p class="centeredText">Software Developer X Social Introvert X Animal Lover X Music Aspirant</p>
+				<h1 class="centerText">A LITTLE ABOUT MYSELF</h1>
 				<hr>
-				<p>Computer Science major at the University of British Columbia, addicted to clean code. </p>
-				<p>During my final year of studies, I had the opportunities to exchange at ETH Zurich. Away from home, surrounding myself with strangers, going to unfamiliar places, I got to be a step closer to my undefined passion. </p>
+				<p>Computer Science major at the University of British Columbia, addicted to coding. </p>
+				<p>During my final year of studies, I had the opportunities to exchange at ETH Zurich. Away from home, surrounding myself with strangers, going to unfamiliar places, I got to be a step closer to my yet to defined passion. </p>
 				<p>I am always up for trying new things, tinkering with gadgets around the house, learning another language. Hiking, biking, dancing are my go-to activities for working up a good sweat. </p>
 			</article>
 		</section>
-		
+
 		<section id="project">
-			<article class="">
-				
-			</article>
+			<h1>Projects</h1>
+			<ul class="tiles-wrap animated" id="projectList">
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj1" src="image/logo.jpg">
+		        	<p>Security Analysis Project</p>
+		        </li>
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj2" src="image/lightbulb.jpg">
+		        	<p>iOS Toast Master Tracker</p>
+		        </li>
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj3" src="image/snow.jpg">
+		        	<p>Sustainability Hackathon</p>
+		        </li>
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj4" src="image/snow.jpg">
+		        	<p>Wordpress Theme</p>
+		        </li>
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj5" src="image/snow.jpg">
+		        	<p>Secure Chatting Service</p>
+		        </li>
+		        <li>
+		        	<img data-toggle="modal" data-target="#proj6" src="image/snow.jpg">
+		        	<p>GWT App Food Truck Finder</p>
+		        </li>
+	        </ul>
+
+	        <!-- Modal -->
+			<div class="modal fade" id="proj1">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+			        <h4 class="modal-title">Security Analysis of UBC Alumni System</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img src="image/logo.jpg" width="200" height="200">
+			      </div>
+			      <div class="modal-footer">
+			      	 <p> • Performed holistic analysis using common attack vectors on the alumni engagement websites</p><p> • Proposed short term and long term solutions to the discovered vulnerabilities</p><p> • Took initiative as team lead in planning, tracking and managing</p><p> • Awarded best presentation at cohort conference</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
 		</section>
+	
+		<section id="character">
+			<p class="centerText">Software Developer X Social Introvert X Animal Lover X Music Aspirant</p>
+		</section>
+		
+		<script>
+			var wookmark = new Wookmark('#projectList', {
+				flexibleWidth: true,
+				offset: 40,
+				itemWidth: 200,
+			});
+		</script>
 
 	</body>
 </html>

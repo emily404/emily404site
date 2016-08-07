@@ -1,0 +1,157 @@
+html {
+    font-family: Raleway;
+}
+
+a{
+    padding-bottom: 0.25em;
+}
+
+a:hover{
+    border-bottom: 1px dashed;
+}
+
+.parallax-window {
+    min-height: 100vh;
+    background: transparent;
+    position: relative;
+}
+
+.centerBox {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centerText {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#frontPage {
+    height: 100vh;
+    position: relative;
+}
+
+.titleBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+#logo {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 2em;
+}
+
+#pageName {
+    font-family: 'Lobster Two', cursive;
+    font-size: 6em;
+    color: rgb(66, 66, 66);
+    margin: auto;
+    white-space: nowrap;
+}
+
+.subtitleBox {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(66, 66, 66);
+}
+
+.subtitleBox img {
+    height: 3em;
+    width: 3em;
+}
+
+#bio {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 1% 5%;
+}
+
+#bio h1 {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#project {
+    min-height: 100vh;
+    background-color: rgba(0, 128, 128, 0.1);
+}
+
+#project h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 4em;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    padding-top: 0.5em;
+    margin: auto;
+}
+
+#projectList img {
+    width: 200px;
+}
+
+#projectList p {
+    font-size: 0.8em;
+    padding: 0 1em;
+}
+
+#character {
+}
+
+@media only screen and (min-width: 1px) { 
+    html{
+        font-size: 0.8em;
+    }
+    #pageName {
+        font-size: 3.5em;
+    }
+    .centerBox {
+        width: 80%;
+    }    
+}
+
+@media only screen and (min-width: 481px) { 
+    html{
+        font-size: 0.9em;
+    }
+    #pageName {
+        font-size: 5em;
+    }
+    .centerBox {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 767px) { 
+    html{
+        font-size: 1em;
+    }
+    #pageName {
+        font-size: 6em;
+    }
+    .centerBox {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) { 
+    html{
+        font-size: 1.1em;
+    }
+    #frontPage .centerBox {
+        width: 40%;
+    }
+
+    .tiles-wrap {
+      margin: 5vh 30vh;
+    }
+}
+
+
