@@ -64,9 +64,12 @@ a:hover{
 #bio {
     background-image: url("../image/snow.JPG");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     position: relative;
 }
