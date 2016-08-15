@@ -28,37 +28,29 @@ a:hover{
     position: relative;
 }
 
-.titleBox {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3em;
-}
-
-#logo {
-    height: 5.5em;
-    border-radius: 50%;
-    margin: auto;
-    margin-right: 2em;
-}
-
 #pageName {
-    font-family: 'Lobster Two', cursive;
+    font-family: 'KingBasil';
     font-size: 6em;
     color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
     margin: auto;
     white-space: nowrap;
 }
 
 .subtitleBox {
+    margin-top: 0.5em;
     display: flex;
     justify-content: space-between;
-    font-family: 'Raleway', sans-serif;
     color: rgb(66, 66, 66);
 }
 
 .subtitleBox img {
-    height: 3em;
-    width: 3em;
+    height: 2.5em;
+}
+
+#logo {
+    border-radius: 50%;
 }
 
 #bio {
@@ -112,24 +104,6 @@ a:hover{
 }
 
 /*animation*/
-/* Grow */
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.1);
-}
-
 /* Glow */
 .hvr-glow {
   display: inline-block;
@@ -149,6 +123,12 @@ a:hover{
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+@font-face {
+    font-family: KingBasil;
+    src: url("../image/King-Basil-Lite.otf") format("opentype");
+}
+
+/*iphone 5 and smaller*/
 @media only screen and (min-width: 1px) { 
     html{
         font-size: 0.8em;
@@ -161,6 +141,20 @@ a:hover{
     }
 }
 
+/*iphone 6 and 6 plus*/
+@media only screen and (min-width: 321px) { 
+    html{
+        font-size: 0.9em;
+    }
+    #pageName {
+        font-size: 4em;
+    }
+    .centerBox {
+        width: 80%;
+    }
+}
+
+/*all mobile landscape*/
 @media only screen and (min-width: 481px) { 
     html{
         font-size: 0.9em;
@@ -168,14 +162,18 @@ a:hover{
     #pageName {
         font-size: 5em;
     }
+    #frontPage .centerBox {
+        width: 50%;
+    }
     .centerBox {
         width: 80%;
     }
 }
 
+/*ipad*/
 @media only screen and (min-width: 767px) { 
     html{
-        font-size: 1em;
+        font-size: 1.1em;
     }
     #pageName {
         font-size: 6em;
@@ -185,20 +183,16 @@ a:hover{
     }
 }
 
+/*desktop*/
 @media only screen and (min-width: 1024px) { 
-    html{
-        font-size: 1.1em;
-    }
     #frontPage .centerBox {
         width: 40%;
     }
     .tiles-wrap {
-      margin: 5vh 30vh;
+      margin: 5vh 35vh;
     }
     #bio {
         background-attachment: fixed;
     }
 
 }
-
-
