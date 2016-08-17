@@ -31,11 +31,22 @@ a:hover{
 #pageName {
     font-family: 'KingBasil';
     font-size: 6em;
-    color: rgb(66, 66, 66);
+    color: #444041;
     display: flex;
     justify-content: center;
     margin: auto;
     white-space: nowrap;
+}
+
+#i {
+    position: relative;
+}
+
+#i:before {
+    content: 'i';
+    position: absolute;
+    color: #FFB566;
+    clip: rect(auto, auto, 0.35em, auto);
 }
 
 .subtitleBox {
